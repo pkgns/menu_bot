@@ -16,9 +16,9 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: menu_bot:v.0.1
+          tags: pkgns/menu_bot:v.0.1
